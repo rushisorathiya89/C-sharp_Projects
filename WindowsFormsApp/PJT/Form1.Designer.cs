@@ -111,6 +111,7 @@
             this.Sage.Name = "Sage";
             this.Sage.Size = new System.Drawing.Size(198, 20);
             this.Sage.TabIndex = 6;
+            this.Sage.TextChanged += new System.EventHandler(this.Sage_TextChanged);
             // 
             // Scity
             // 
@@ -118,6 +119,7 @@
             this.Scity.Name = "Scity";
             this.Scity.Size = new System.Drawing.Size(198, 20);
             this.Scity.TabIndex = 7;
+            this.Scity.TextChanged += new System.EventHandler(this.Scity_TextChanged);
             // 
             // Sname
             // 
@@ -125,6 +127,7 @@
             this.Sname.Name = "Sname";
             this.Sname.Size = new System.Drawing.Size(198, 20);
             this.Sname.TabIndex = 8;
+            this.Sname.TextChanged += new System.EventHandler(this.Sname_TextChanged);
             // 
             // Insert
             // 
@@ -189,7 +192,7 @@
             this.Controls.Add(this.Age);
             this.Controls.Add(this.City);
             this.Controls.Add(this.EnrollNo);
-            this.Name = "Form1";
+           
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -201,7 +204,8 @@
         private System.Windows.Forms.Label EnrollNo;
         private System.Windows.Forms.Label City;
         private System.Windows.Forms.Label Age;
-        private System.Windows.Forms.Label Name;
+        //private System.Windows.Forms.Label Name;
+        private new System.Windows.Forms.Label Name;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Enroll;
         private System.Windows.Forms.TextBox Sage;
@@ -210,6 +214,7 @@
         private System.Windows.Forms.Button Insert;
         private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.Button Delete;
-        private System.Windows.Forms.Button Update;
+        //private System.Windows.Forms.Button Update;
+        private new System.Windows.Forms.Button Update;
     }
 }
